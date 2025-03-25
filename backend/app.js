@@ -34,7 +34,7 @@ app.use('/uploads', express.static('uploads'));
 
 const __dirname = path.resolve();
 
-app.get('/admin/js/config.js', (req, res) => {
+app.get('/frontend/config.js', (req, res) => {
     const config = `
         const BASE_URL = "${process.env.NODE_ENV === 'production'
             ? 'https://your-production-domain.com/api'
