@@ -1,0 +1,750 @@
+[
+    {
+        "_id": "67bf52e85b4b12ffc89dd23a",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which club has won the most La Liga titles?",
+        "correctAnswer": "Real Madrid, with 36 titles.",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591848/questionMedia/wcjadvxlxxbr0g2pdumd.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591847/questionMedia/udqzaqg0zi7u7h9rz2ro.png"
+    },
+    {
+        "_id": "67bf53d75b4b12ffc89dd23d",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which player holds the record for the most goals in La Liga history?",
+        "correctAnswer": "Lionel Messi, with 474 goals for Barcelona.",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740592086/questionMedia/jhxpvyem0kxizshpktkd.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740592086/questionMedia/tvbwus620ogc0r1tvznv.jpg"
+    },
+    {
+        "_id": "67bf55fd5b4b12ffc89dd266",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Who is the all-time top assist provider in La Liga?",
+        "correctAnswer": "Lionel Messi, with 192 assists.",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740592636/questionMedia/xnxpckkgmndw1fokxij6.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740592636/questionMedia/xwhycr9przefqxlu6brq.jpg"
+    },
+    {
+        "_id": "67c01044d23530787fe3d4e6",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Who has won the most Premier League titles?",
+        "correctAnswer": "Manchester United (13 titles under Sir Alex Ferguson)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740640323/questionMedia/akgh4jidhs1vtw1284sn.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740640323/questionMedia/qxedgcc3e9piiev6pt79.jpg"
+    },
+    {
+        "_id": "67c0dd4be227d07679317e04",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Who is the all-time top scorer in Premier League history?",
+        "correctAnswer": "Alan Shearer (260 goals)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740692811/questionMedia/phlrbdfxs5ltd4tgv6qr.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740692810/questionMedia/soshh5xobankz09rc5co.jpg"
+    },
+    {
+        "_id": "67c0e0fdb28ecec9cc6e0197",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Which player has the most assists in Premier League history?",
+        "correctAnswer": "Ryan Giggs (162 assists)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740693755/questionMedia/rlf215hplx8hfp0ghpqz.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740693756/questionMedia/aqjfv0sveay5y0fxx8fu.jpg"
+    },
+    {
+        "_id": "67c0e259b28ecec9cc6e019a",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Who was the first team to win the Premier League in its inaugural 1992-93 season?",
+        "correctAnswer": "Manchester United",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740694105/questionMedia/efc27pnebc6yjseblonq.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740694104/questionMedia/ovjbzdj5o2lupzb9tqp6.png"
+    },
+    {
+        "_id": "67c0e312b28ecec9cc6e019d",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Which club went unbeaten for an entire Premier League season?",
+        "correctAnswer": "Arsenal (2003-04, \"The Invincibles\")",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740694289/questionMedia/tddnqbqy6txr87ga2dsn.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740694289/questionMedia/q1ihtojwmyzjpzlelxvl.jpg"
+    },
+    {
+        "_id": "67c0e3c5b28ecec9cc6e01a0",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Who scored the fastest hat-trick in Premier League history?",
+        "correctAnswer": "Sadio Mané (2 minutes 56 seconds for Southampton vs. Aston Villa in 2015)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740694468/questionMedia/rt3hfeepmf7p7gqp74sh.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740694468/questionMedia/p6z8mxjdkmqy0gtg7cw3.jpg"
+    },
+    {
+        "_id": "67c0e7f77196778fbf202d40",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which player has the most combined goals and assists in a single La Liga season?",
+        "correctAnswer": "Cristiano Ronaldo, with 63 combined goals and assists in the 2014-2015 season",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740695542/questionMedia/ittt2dadggbfvbui87dv.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740695542/questionMedia/jnniev5pmytes0ogvelx.jpg"
+    },
+    {
+        "_id": "67c2f68a1145a1aba2e7ea8e",
+        "category": {
+            "_id": "67c2f5aa1145a1aba2e7ea83",
+            "name": "Physics",
+            "description": "Questions Related to Physics",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830122/categoryImage/qyhu41tbotln9k7hchmk.jpg",
+            "__v": 0
+        },
+        "content": "Which fundamental force causes the apple to fall towards the ground?",
+        "correctAnswer": "Gravitational Force",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830345/questionMedia/cslglihrk8abs8nx8omf.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830345/questionMedia/ovmuhazjdps7xsvtidsl.png"
+    },
+    {
+        "_id": "67c2f71c1145a1aba2e7ea91",
+        "category": {
+            "_id": "67c2f5aa1145a1aba2e7ea83",
+            "name": "Physics",
+            "description": "Questions Related to Physics",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830122/categoryImage/qyhu41tbotln9k7hchmk.jpg",
+            "__v": 0
+        },
+        "content": "What phenomenon causes a prism to separate white light into different colors?",
+        "correctAnswer": "Refraction",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830491/questionMedia/cnvhitcvohx9gzscxkmm.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830491/questionMedia/phpgxjscgivdv4eoix3g.jpg"
+    },
+    {
+        "_id": "67c2f7e81145a1aba2e7ea94",
+        "category": {
+            "_id": "67c2f5aa1145a1aba2e7ea83",
+            "name": "Physics",
+            "description": "Questions Related to Physics",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830122/categoryImage/qyhu41tbotln9k7hchmk.jpg",
+            "__v": 0
+        },
+        "content": "What effect causes the pitch of the siren to change as it moves?",
+        "correctAnswer": "Doppler Effect ",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830696/questionMedia/scafv0fzt2dunk1nrhrt.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830695/questionMedia/h0atlfziciwsgkg1aabk.jpg"
+    },
+    {
+        "_id": "67c2f8131145a1aba2e7ea97",
+        "category": {
+            "_id": "67c2f5aa1145a1aba2e7ea83",
+            "name": "Physics",
+            "description": "Questions Related to Physics",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830122/categoryImage/qyhu41tbotln9k7hchmk.jpg",
+            "__v": 0
+        },
+        "content": "What do the lines around the magnet represent?",
+        "correctAnswer": "Magnetic Field",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830738/questionMedia/l3lumjvvksacqs68ovuk.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830738/questionMedia/dbaovbdzwjxbtr6yfdkw.png"
+    },
+    {
+        "_id": "67c2fa191145a1aba2e7eb23",
+        "category": {
+            "_id": "67c2f5c81145a1aba2e7ea87",
+            "name": "Chemistry",
+            "description": "Questions Related to Chemistry",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830151/categoryImage/i3cbwui7l9k6wwofo9lf.jpg",
+            "__v": 0
+        },
+        "content": "What is the smallest unit of an element that retains its properties?",
+        "correctAnswer": "Atom",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831256/questionMedia/qh6ripkpjceknb8jjdi7.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831257/questionMedia/rtpxplffc1dnbhauvau9.png"
+    },
+    {
+        "_id": "67c2fad21145a1aba2e7eb26",
+        "category": {
+            "_id": "67c2f5c81145a1aba2e7ea87",
+            "name": "Chemistry",
+            "description": "Questions Related to Chemistry",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830151/categoryImage/i3cbwui7l9k6wwofo9lf.jpg",
+            "__v": 0
+        },
+        "content": "Which element has the atomic number 1?",
+        "correctAnswer": "Hydrogen",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831441/questionMedia/xwyymbk0u9q4dmwls9cs.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831441/questionMedia/r16ncdp4isbmnicbm0sp.png"
+    },
+    {
+        "_id": "67c2fb571145a1aba2e7eb29",
+        "category": {
+            "_id": "67c2f5c81145a1aba2e7ea87",
+            "name": "Chemistry",
+            "description": "Questions Related to Chemistry",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830151/categoryImage/i3cbwui7l9k6wwofo9lf.jpg",
+            "__v": 0
+        },
+        "content": "What gas is released when baking soda reacts with vinegar?",
+        "correctAnswer": "Carbon dioxide",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831575/questionMedia/hjsii2gckop2d6neurbf.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831574/questionMedia/gel8two8fmdki59hipgk.png"
+    },
+    {
+        "_id": "67c2fc161145a1aba2e7eb2c",
+        "category": {
+            "_id": "67c2f5c81145a1aba2e7ea87",
+            "name": "Chemistry",
+            "description": "Questions Related to Chemistry",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830151/categoryImage/i3cbwui7l9k6wwofo9lf.jpg",
+            "__v": 0
+        },
+        "content": "What is the process called when a solid changes directly into a gas?",
+        "correctAnswer": "Sublimation",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831766/questionMedia/rwkhkhjvookyzvydpbz4.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831766/questionMedia/ydnv3l1txfxjftt1b9xq.png"
+    },
+    {
+        "_id": "67c2fca21145a1aba2e7eb2f",
+        "category": {
+            "_id": "67c2f5de1145a1aba2e7ea8b",
+            "name": "Biology",
+            "description": "Questions Related to Biology",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830174/categoryImage/ymilyy6co1fnqthzzfb0.jpg",
+            "__v": 0
+        },
+        "content": "What is the longest bone in the human body?",
+        "correctAnswer": "Femur",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831906/questionMedia/gzalehwumvtlodfdzoip.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740831905/questionMedia/bahds0etgrswcpqq8eie.png"
+    },
+    {
+        "_id": "67c2fd101145a1aba2e7eb32",
+        "category": {
+            "_id": "67c2f5de1145a1aba2e7ea8b",
+            "name": "Biology",
+            "description": "Questions Related to Biology",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830174/categoryImage/ymilyy6co1fnqthzzfb0.jpg",
+            "__v": 0
+        },
+        "content": "What is the basic unit of heredity?",
+        "correctAnswer": "Gene",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832015/questionMedia/zomhdtbu8a3hhub0e0jm.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832015/questionMedia/gdwfndijrrba61mp0byy.png"
+    },
+    {
+        "_id": "67c2fd7e1145a1aba2e7eb35",
+        "category": {
+            "_id": "67c2f5de1145a1aba2e7ea8b",
+            "name": "Biology",
+            "description": "Questions Related to Biology",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830174/categoryImage/ymilyy6co1fnqthzzfb0.jpg",
+            "__v": 0
+        },
+        "content": "What type of microorganism causes tuberculosis?",
+        "correctAnswer": "Bacteria",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832125/questionMedia/gtttetp6vvr1il2ymxnp.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832125/questionMedia/rzj7c5o3zoh6url7hhdy.png"
+    },
+    {
+        "_id": "67c2fe081145a1aba2e7eb38",
+        "category": {
+            "_id": "67c2f5de1145a1aba2e7ea8b",
+            "name": "Biology",
+            "description": "Questions Related to Biology",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830174/categoryImage/ymilyy6co1fnqthzzfb0.jpg",
+            "__v": 0
+        },
+        "content": "Which organ pumps blood throughout the human body?",
+        "correctAnswer": "Heart",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832263/questionMedia/zjryooagxlhhdaukrnzt.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832264/questionMedia/ng5ummonib5volntursc.jpg"
+    },
+    {
+        "_id": "67c2fef41145a1aba2e7eb3b",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which player has made the most appearances in Serie A?",
+        "correctAnswer": "Gianluigi Buffon (657 appearances)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832500/questionMedia/ufjnjyklatovey2kzo76.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832500/questionMedia/ig7et1aorl11nwmir0ab.jpg"
+    },
+    {
+        "_id": "67c2ff641145a1aba2e7eb3e",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which club has won the most Serie A titles?",
+        "correctAnswer": "Juventus (36 titles)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832611/questionMedia/seulyweeyiw1his0ieup.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740832611/questionMedia/xom0bawezl8vc38vpbfh.png"
+    },
+    {
+        "_id": "67c31ea6b5fd965807d1a377",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which player has made the most appearances in Serie A?",
+        "correctAnswer": "Gianluigi Buffon (657 appearances)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740840614/questionMedia/x5frjtv9c6zunpyxc35l.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740840614/questionMedia/bwnp0jqeevvxfve6q3ms.jpg"
+    },
+    {
+        "_id": "67c31f96b5fd965807d1a37a",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which team went unbeaten for an entire Serie A season?",
+        "correctAnswer": "Juventus (2011-12 season)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740840853/questionMedia/dmu78i6iq5g7lvw5ayko.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740840852/questionMedia/sduislsrokhpmt0a2bs6.jpg"
+    },
+    {
+        "_id": "67c320afb5fd965807d1a37d",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Who was the last team other than Juventus, Inter Milan, or AC Milan to win the Serie A title?",
+        "correctAnswer": "Napoli (2022-23 season)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740841134/questionMedia/t4w1thd6j22dtci5pljy.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740841134/questionMedia/tqayclugaxbh4fr1irq9.png"
+    },
+    {
+        "_id": "67c3219fb5fd965807d1a380",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which club has the most consecutive Serie A titles?",
+        "correctAnswer": "Juventus (9 titles from 2011-12 to 2019-20)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740841375/questionMedia/jboxios8jjdtgqhhypsc.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740841375/questionMedia/sfz14opfpzthj0xnfcse.jpg"
+    },
+    {
+        "_id": "67c324e7b5fd965807d1a383",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which club has the second-highest number of La Liga titles?",
+        "correctAnswer": "Barcelona, with 27 titles",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740842214/questionMedia/itjpildmfiyk9swlvvck.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740842214/questionMedia/jze6xfc3ssgxtokgiouz.jpg"
+    },
+    {
+        "_id": "67c325bab5fd965807d1a386",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which two teams compete in \"El Clásico\"?",
+        "correctAnswer": "Rea Madrid and Barcelona",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740842425/questionMedia/jd0rkfcb6toz3lddsxtu.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740842425/questionMedia/rod0zmmf9lo06eo5soho.jpg"
+    },
+    {
+        "_id": "67c35f54b5fd965807d1a389",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "What is the name of Atlético Madrid’s home stadium?",
+        "correctAnswer": "Cívitas Metropolitano",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857171/questionMedia/ufx5urefnbfq31snmx4y.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857171/questionMedia/isqokgbuh871faae49f4.jpg"
+    },
+    {
+        "_id": "67c3600fb5fd965807d1a38c",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which club is known as \"Los Leones\" (The Lions)?",
+        "correctAnswer": "Athletic Bilbao",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857358/questionMedia/bptg8xeukmgnfy6hnzzx.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857359/questionMedia/gfvwgjjfdxtgo7gjnifs.png"
+    },
+    {
+        "_id": "67c361bf0d4296f975afb9b7",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which two teams contest the Seville derby?",
+        "correctAnswer": "Sevilla FC and Real Betis",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857791/questionMedia/s1vmbeyssczhjagw43xz.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857790/questionMedia/jle5utshwadlx3hodgqm.png"
+    },
+    {
+        "_id": "67c3625d0d4296f975afb9ba",
+        "category": {
+            "_id": "67bf50ab5b4b12ffc89dd22f",
+            "name": "Laliga",
+            "description": "Questions Related to Laliga",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591275/categoryImage/ivbmb6ugcl9ow2dxo0zw.jpg",
+            "__v": 0
+        },
+        "content": "Which club achieved a historic treble in the 2014-2015 season?",
+        "correctAnswer": "Barcelona, winning La Liga, Copa del Rey, and the UEFA Champions League",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857948/questionMedia/bselbiwccep8pwdyom5x.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740857948/questionMedia/rloteetk8wzgjy8jm6rr.jpg"
+    },
+    {
+        "_id": "67c364200d4296f975afb9bd",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Which team holds the record for the most points in a single Premier League season?",
+        "correctAnswer": "Manchester City (100 points in 2017-18)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858398/questionMedia/ssiqqh0sqntedmgrbtkx.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858399/questionMedia/z0yrnwlyvyskqcboyt6n.png"
+    },
+    {
+        "_id": "67c3648a0d4296f975afb9c0",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Who has made the most appearances in Premier League history?",
+        "correctAnswer": "Gareth Barry (653 appearances)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858502/questionMedia/mrcohjbxicfgxtfd4oh8.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858505/questionMedia/isfveojr39ryv3iqokbj.png"
+    },
+    {
+        "_id": "67c365210d4296f975afb9c3",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Which team has suffered the most relegations from the Premier League?",
+        "correctAnswer": "Norwich City (6 relegations)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858656/questionMedia/yspntiqmn4h1t48hq0ul.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858657/questionMedia/l66y05zruir2qgjsjcnj.jpg"
+    },
+    {
+        "_id": "67c365950d4296f975afb9c6",
+        "category": {
+            "_id": "67bf51205b4b12ffc89dd233",
+            "name": "PREMIER LEAGUE",
+            "description": "Questions Related to PREMIER LEAGUE",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591392/categoryImage/tn6qjtctxxxyt4ckjqwz.jpg",
+            "__v": 0
+        },
+        "content": "Who was the first non-British manager to win the Premier League?",
+        "correctAnswer": "Arsène Wenger (with Arsenal in 1997-98)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858772/questionMedia/kawnfzzgphilcamnndi8.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858772/questionMedia/govcfpvzhtmrpwidysyn.jpg"
+    },
+    {
+        "_id": "67c366730d4296f975afb9c9",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Who was the first non-Italian player to win the Capocannoniere (top scorer) award?",
+        "correctAnswer": "John Hansen (Danish, with Juventus in 1951-52)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858995/questionMedia/np4onfctcg0tbekmywwu.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740858995/questionMedia/jntnua1ap7qr2d1w8yns.jpg"
+    },
+    {
+        "_id": "67c366e00d4296f975afb9cc",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which team holds the record for the longest unbeaten run in Serie A?",
+        "correctAnswer": "AC Milan (58 games from 1991 to 1993)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859103/questionMedia/ej0p9xvhjs9w58v72xc0.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859103/questionMedia/mozzhjmb98kmwnmgooqj.jpg"
+    },
+    {
+        "_id": "67c3674b0d4296f975afb9cf",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Who is the youngest player to ever play in Serie A?",
+        "correctAnswer": "Wisdom Amey (15 years and 274 days, for Bologna in 2021)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859208/questionMedia/urd7lvbxrmdfemx4gabd.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859210/questionMedia/yw3eyi2vutll5utemaxr.jpg"
+    },
+    {
+        "_id": "67c367cc0d4296f975afb9d2",
+        "category": {
+            "_id": "67bf51605b4b12ffc89dd237",
+            "name": "SERIE A",
+            "description": "Questions Related to SERIE A",
+            "parentCategory": "67bf506c5b4b12ffc89dd22c",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740591455/categoryImage/brownzmszt6tioxsgmct.jpg",
+            "__v": 0
+        },
+        "content": "Which club has won the most Serie A titles outside of the \"big three\" (Juventus, Inter, Milan)?",
+        "correctAnswer": "Genoa (9 titles)",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859339/questionMedia/qcuddcssogh4hy7jveax.jpg",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859339/questionMedia/dyxtnlurxmnx18pf32js.png"
+    },
+    {
+        "_id": "67c368b50d4296f975afb9d5",
+        "category": {
+            "_id": "67c2f5aa1145a1aba2e7ea83",
+            "name": "Physics",
+            "description": "Questions Related to Physics",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830122/categoryImage/qyhu41tbotln9k7hchmk.jpg",
+            "__v": 0
+        },
+        "content": "The double-slit experiment demonstrates the wave-particle duality of which particle?",
+        "correctAnswer": "Electron",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859572/questionMedia/el0ebl7hqvxhu7aajvok.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859573/questionMedia/c2fh8nd2x481d0u4nyid.png"
+    },
+    {
+        "_id": "67c3695c0d4296f975afb9d8",
+        "category": {
+            "_id": "67c2f5aa1145a1aba2e7ea83",
+            "name": "Physics",
+            "description": "Questions Related to Physics",
+            "parentCategory": "67c2f56e1145a1aba2e7ea80",
+            "categoryPicture": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740830122/categoryImage/qyhu41tbotln9k7hchmk.jpg",
+            "__v": 0
+        },
+        "content": "Which law of thermodynamics states that energy cannot be created or destroyed?",
+        "correctAnswer": "First Law",
+        "points": 10,
+        "type": "image",
+        "mediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859740/questionMedia/yzilifxuamrpr0hhrkwr.png",
+        "answerMediaUrl": "https://res.cloudinary.com/dymdhzavb/image/upload/v1740859740/questionMedia/fvhgspcyh3xuiaxcm7eu.png"
+    }
+]

@@ -1,0 +1,576 @@
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    .dp-top-wrapper {
+        gap: 26px;
+    }
+    .db-block-info p {
+        font-size: 14px;
+    }
+    .db-block-details h2 {
+        font-size: 20px;
+    }
+    .db-block-details .total-uer-bar {
+        width: 120px;
+    }
+}
+/*
+====================================
+large Screen - Others
+====================================
+*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .db-content-table table th, .db-content-table table td {
+        padding: 16px 6px 16px 16px;
+    }
+
+    .dp-top-wrapper {
+        gap: 26px;
+        flex-wrap: wrap;
+        justify-content: start !important;
+    }
+    .db-block-info p {
+        font-size: 14px;
+    }
+    .db-block-details h2 {
+        font-size: 20px;
+    }
+    .db-block-details .total-uer-bar {
+        width: 120px;
+    }
+    .db-top-block {
+        width: calc((100% / 3) - 26px);
+    }
+}
+
+
+
+
+
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* dashboard responsive */
+    .sidebar-wrap {
+        max-width: 60px;
+        flex: 0 0 60px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sidebar-wrap .menu-links {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .sidebar-wrap .menu-links span {
+        display: none;
+    }
+    .sidebar-logo a {
+        display: none;
+    }
+    .sidebar-menu-inner ul {
+        gap: 20px;
+    }
+    .search-input-wrap {
+        max-width: 248px;
+    }
+    .page-action-header {
+        gap: 10px;
+    }
+    .logout-account .menu-links {
+        padding: 10px 13px;
+    }
+    .logout-account {
+        padding: 0px;
+    }
+    .dash-content-wrap {
+        max-width: calc(100% - 60px);
+        left: 60px;
+    }
+    .sidebar-wrap.sidebar-active {
+        max-width: 260px;
+        flex: 0 0 260px;
+        padding: 18.719px 12px 18.719px 17px;
+    }
+    .sidebar-wrap.sidebar-active .menu-links {
+        padding: 9px 13px;
+    }
+    .sidebar-wrap.sidebar-active .menu-links span,
+    .sidebar-active .sidebar-logo a {
+        display: block;
+    }
+    .db-content-table table th, .db-content-table table td {
+        padding: 15px 6px 15px 14px;
+    }
+    
+ 
+    .dp-top-wrapper {
+        gap: 26px;
+        flex-wrap: wrap;
+        justify-content: start !important;
+    }
+    .db-block-info p {
+        font-size: 14px;
+    }
+    .db-block-details h2 {
+        font-size: 20px;
+    }
+    .db-block-details .total-uer-bar {
+        width: 120px;
+    }
+    .db-top-block {
+        width: calc((100% / 3) - 26px);
+    }
+
+
+
+
+
+
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+    /* login page responsive  */
+    .login-main-wrapper .subtract {
+        max-width: 300px;
+    }
+    .ractangle-one {
+        max-width: 150px;
+    }
+    .ractangle-two {
+        max-width: 250px;
+    }
+
+    /* dashboard responsive */
+    .sidebar-wrap {
+        max-width: 60px;
+        flex: 0 0 60px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sidebar-wrap .menu-links {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .sidebar-wrap .menu-links span {
+        display: none;
+    }
+    .sidebar-logo a {
+        display: none;
+    }
+    .sidebar-menu-inner ul {
+        gap: 20px;
+    }
+    .search-input-wrap {
+        max-width: 248px;
+    }
+    .page-action-header {
+        gap: 10px;
+    }
+    .logout-account .menu-links {
+        padding: 10px 13px;
+    }
+    .logout-account {
+        padding: 0px;
+    }
+    .sidebar-wrap {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .dash-content-wrap {
+        max-width: calc(100% - 60px);
+        position: relative;
+        left: 60px;
+    }
+    .sidebar-wrap.sidebar-active {
+        max-width: 260px;
+        flex: 0 0 260px;
+        padding: 18.719px 12px 18.719px 17px;
+    }
+    .sidebar-wrap.sidebar-active .menu-links {
+        padding: 9px 13px;
+    }
+    .sidebar-wrap.sidebar-active .menu-links span,
+    .sidebar-active .sidebar-logo a {
+        display: block;
+    }
+    .db-content-table table {
+        min-width: 970px;
+    }
+    .db-table-inner {
+        overflow-x: auto;
+        scrollbar-color: #826AED #efefef;  
+    }
+
+    .add-question-wrapper {
+        margin-top: 0;
+        padding: 20px 25px;
+    }
+    
+    .activity-table table {
+        min-width: auto;
+    }
+
+
+    .dp-top-wrapper {
+        gap: 26px;
+        flex-wrap: wrap;
+        justify-content: start !important;
+    }
+    .db-block-info p {
+        font-size: 14px;
+    }
+    .db-block-details h2 {
+        font-size: 20px;
+    }
+    .db-block-details .total-uer-bar {
+        width: 120px;
+    }
+    .db-top-block {
+        width: calc((100% / 2) - 26px);
+    }
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* dashboard responsive */
+  .sidebar-wrap {
+    max-width: 60px;
+    flex: 0 0 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sidebar-wrap .menu-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar-wrap .menu-links span {
+    display: none;
+}
+.sidebar-logo a {
+    display: none;
+}
+.sidebar-menu-inner ul {
+    gap: 20px;
+}
+.search-input-wrap {
+    max-width: 248px;
+}
+.page-action-header {
+    gap: 10px;
+}
+.logout-account .menu-links {
+    padding: 10px 13px;
+}
+.logout-account {
+    padding: 0px;
+}
+.sidebar-wrap {
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.dash-content-wrap {
+    max-width: calc(100% - 60px);
+    position: relative;
+    left: 60px;
+}
+.sidebar-wrap.sidebar-active {
+    max-width: 260px;
+    flex: 0 0 260px;
+    padding: 18.719px 12px 18.719px 17px;
+}
+.sidebar-wrap.sidebar-active .menu-links {
+    padding: 9px 13px;
+}
+.sidebar-wrap.sidebar-active .menu-links span,
+.sidebar-active .sidebar-logo a {
+    display: block;
+}
+
+.page-header-title h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.page-action-header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.total-question-btn {
+    margin-left: auto;
+}
+.db-page-header {
+    padding: 21px 10px;
+}
+.profile-pic img {
+    max-width: 50px;
+}
+.page-header-inner {
+    gap: 16px;
+}
+.profile-viewer {
+    gap: 15px;
+    padding-right: 7px;
+}
+.total-question-btn small {
+    font-size: 17px;
+}
+.add-new-btn button {
+    min-width: 155px;
+    text-align: center;
+}
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {	
+
+
+    /* login page responsive  */
+    .login-main-wrapper .subtract {
+        max-width: 240px;
+    }
+    .ractangle-one {
+        max-width: 150px;
+    }
+    .ractangle-two {
+        max-width: 200px;
+    }
+    .db-content-table table {
+        min-width: 970px;
+    }
+    .db-table-inner {
+        overflow-x: auto;
+        scrollbar-color: #826AED #efefef;  
+    }
+    .db-content-table table th, .db-content-table table td {
+        padding: 15px 6px 15px 14px;
+    }
+    .db-content-table .view-all {
+        padding-top: 30px;
+        padding-bottom: 3px;
+    }
+    .footer-bg {
+        min-height: 20px;
+    }
+    .site-modal .modal-header {
+        padding: 22px 40px 22px 30px;
+    }
+    .site-modal .modal-body {
+        padding: 34px 30px 43px 30px;
+    }
+
+    .user-manage-header .search-input-wrap {
+        order: 3;
+    }
+
+    .user-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .user-status-wp .payment-history {
+        padding: 0px 28px;
+    }
+    .single-play-info h4 {
+        font-size: 20px;
+    }
+    .single-play-info h2 {
+        font-size: 24px;
+    }
+    .circle span {
+        font-size: 24px;
+    }
+    .account-status-box h2 {
+        font-size: 20.322px;
+    }
+
+    .account-status-box button {
+        padding: 10px 41px;
+        font-size: 16.088px;
+    }
+
+    .add-question-wrapper {
+        margin-top: 0;
+        padding: 20px 25px;
+    }
+    .add-question-wrapper form {
+        padding: 0;
+        gap: 20px;
+    }
+    .form-action-button {
+        padding-top: 20px;
+    }
+    .add-question-title a {
+        font-size: 20px;
+    }
+
+    .activity-table table {
+        min-width: auto;
+    }
+
+    .dp-top-wrapper {
+        gap: 26px;
+        flex-wrap: wrap;
+        justify-content: start !important;
+    }
+    .db-block-info p {
+        font-size: 14px;
+    }
+    .db-block-details h2 {
+        font-size: 18px;
+    }
+    .db-block-details .total-uer-bar {
+        width: 105px;
+    }
+    .db-top-block {
+        width: calc((100% / 2) - 26px);
+    }
+
+    .user-growth-wrapper .section-title h4 {
+        font-size: 20px;
+    }
+    .dashboard-table-header h4 {
+        font-size: 20px;
+    }
+    .distribution-wrapper h4 {
+        font-size: 20px;
+    }
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 575px) {
+
+    .sidebar-wrap {
+        position: fixed;
+        left: -80%;
+        top: 0;
+        z-index: 2;
+    }
+    .dash-content-wrap {
+        max-width: 100%;
+        position: static;
+    }
+    .db-main-content {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .sidebar-toggle-icon {
+        display: none;
+    }
+    .db-page-header {
+        padding: 16px 4px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page-header-title h3 {
+        padding-top: 20px;
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+    .sidebar-wrap.sidebar-active {
+        left: 0;
+    }
+    .ntifon-area {
+        left: -221%;
+        width: 285px;
+    }
+    .ntifon-area .noti-arrow {
+        display: none;
+    }
+    .total-question-btn small {
+        font-size: 16px;
+    }
+    .page-action-header {
+        grid-template-columns: 100px 160px;
+        display: grid;
+    }
+    .search-input-wrap {
+        grid-column: 1 / -1;
+    }
+    .profile-pic img {
+        max-width: 39px;
+    }
+    .profile-viewer .user-desc h4 {
+        font-size: 14px;
+    }
+    .profile-viewer .user-desc span {
+        font-size: 12px;
+    }
+    .total-question-btn {
+        margin-left: auto;
+    }
+    .add-new-btn button {
+        min-width: 155px;
+        text-align: center;
+    }
+    .page-header-inner {
+        gap: 15px;
+    }
+    .profile-viewer {
+        gap: 15px;
+    }
+    .site-modal .modal-header {
+        padding: 22px 40px 22px 20px;
+    }
+    .site-modal .modal-body {
+        padding: 34px 20px 43px 20px;
+    }
+   
+    .add-question-wrapper {
+        margin-top: 0;
+        padding: 15px 0;
+    }
+
+    .dp-top-wrapper {
+        gap: 15px;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    .db-top-block {
+        width: 100%;
+    }
+
+    .user-growth-wrapper .section-title h4 {
+        font-size: 16px;
+    }
+    .dashboard-table-header h4 {
+        font-size: 18px;
+    }
+    .distribution-wrapper h4 {
+        font-size: 18px;
+    }
+    .growth-chart-header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
