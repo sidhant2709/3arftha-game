@@ -34,7 +34,10 @@ export const createQuestion = async ({ category, content, correctAnswer, points,
 // };
 
 export const getAllQuestions = async () => {
-    const questions = await Question.find().populate("category");
+    const questions = await Question.find().populate({
+      path: "category",
+      populate: { path: "parentCategory", select: "name" }, // Populate parentCategory and get only name
+    });
   
     return questions.map((q) => ({
       _id: q._id,

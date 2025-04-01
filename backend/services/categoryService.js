@@ -71,3 +71,13 @@ export const updateCategory = async (id, data, categoryPictureFile) => {
 export const deleteCategory = async (id) => {
   return await Category.findByIdAndDelete(id);
 };
+
+
+
+export const getAllCategoriesForApi=async ()=> {
+  return await Category.find({ parentCategory: null }); 
+}
+
+export const getAllSubCategoriesForApi=async ()=> {
+  return await Category.find({ parentCategory: { $ne: null } }).populate("parentCategory"); 
+}

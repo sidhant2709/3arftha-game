@@ -68,3 +68,25 @@ export const deleteCategory = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+
+
+export const allCategories = async (req, res) => {
+  try {
+    const categories = await categoryService.getAllCategoriesForApi();
+    res.json({ success: true, data: categories });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+}
+
+
+export const allSubCategories = async (req, res) => {
+
+  try {
+    const subCategories = await categoryService.getAllSubCategoriesForApi();
+    res.json({ success: true, data: subCategories });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+}
