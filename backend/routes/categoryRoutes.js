@@ -7,7 +7,7 @@ import {
   deleteCategory,
   allCategories,
   allSubCategories,
- 
+
 } from '../controllers/categoryController.js';
 import { uploadCategoryImage } from '../config/cloudinaryConfig.js';
 

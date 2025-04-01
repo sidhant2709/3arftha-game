@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const role = sessionStorage.getItem("rolw");
+  const role = sessionStorage.getItem("role");
   const token = sessionStorage.getItem("authToken");
   const apiUrl = `${BASE_URL}/questions`;
   const tableBody = document.querySelector("tbody");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <td>${question._id}</td>
         <td>${question.content}</td>
         <td>${question.correctAnswer}</td>
-        <td>${question.category.name}</td>
+        <td>${question.category.parentCategory.name}</td>
         <td>${question.category.name}</td>
         <td>
           <span>${question.type}</span>
