@@ -32,8 +32,37 @@ export const getAllCategories = async () => {
 };
 
 export const getCategoryById = async (id) => {
-  return await Category.findById(id).populate('parentCategory');
+  const category = await Category.findById(id).populate("parentCategory");
+
+  if (!category) {
+    throw new Error("Category not found");
+  }
+
+  // If the category has a parent, do not fetch subcategories
+  if (category.parentCategory) {
+    return {
+      _id: category._id,
+      name: category.name,
+      description: category.description,
+      parentCategory: {
+        _id: category.parentCategory._id,
+        name: category.parentCategory.name
+      }
+    };
+  }
+
+  // Fetch subcategories only if the category is a parent category
+  const subcategories = await Category.find({ parentCategory: id }).select("_id name");
+
+  return {
+    _id: category._id,
+    name: category.name,
+    description: category.description,
+    subcategories: subcategories.length ? subcategories : []
+  };
 };
+
+
 
 // export const updateCategory = async (id, data) => {
 //   return await Category.findByIdAndUpdate(id, data, { new: true });
