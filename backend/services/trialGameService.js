@@ -1,13 +1,21 @@
 import mongoose from "mongoose";
 import { TrialGame } from "../models/TrialGame.js";
 import  Question  from "../models/Question.model.js";
-
+import Category from "../models/Category.model.js";
 
 export const startOrContinueTrial = async (userId, trialDetails) => {
-    // 1) Check if there's an active trial for this user
+  
+  const firstSubcategoryId = new mongoose.Types.ObjectId(trialDetails.subcategories[0]);
+  
+    const firstSubcatDoc = await Category
+    .findById(firstSubcategoryId)
+    .populate('parentCategory');
+  
+  // 1) Check if there's an active trial for this user
     let trialGame = await TrialGame.findOne({ creator: userId, status: "active" })
       .populate("questions");
   
+      
     // 2) If NO active trial, create one with a fixed set of 10 questions
     if (!trialGame) {
       // If you want a particular category each time, you could do:
@@ -30,7 +38,7 @@ export const startOrContinueTrial = async (userId, trialDetails) => {
         .sort({ _id: 1 })
         .limit(10);
   
-      if (selectedQuestions.length < 10) {
+      if (selectedQuestions.length<10)  {
         throw new Error(
           "Not enough questions in the database to start the trial game!"
         );
@@ -54,10 +62,12 @@ export const startOrContinueTrial = async (userId, trialDetails) => {
       // Return the first question
       return {
         message: "Trial game started",
+        parentCategory: firstSubcatDoc.parentCategory.name,
         trialGameId: trialGame._id,
         currentQuestionIndex: 1, // 1-based index
         // You can return the entire question doc if you want:
         question: selectedQuestions[0],
+        teams:trialDetails.teams || [],
       };
     }
   
@@ -75,8 +85,10 @@ export const startOrContinueTrial = async (userId, trialDetails) => {
   
     return {
       message: "Next trial question",
+      parentCategory: firstSubcatDoc.parentCategory.name,
       trialGameId: trialGame._id,
       currentQuestionIndex: trialGame.currentQuestionIndex+1, // or +1 for front-end
       question: nextQuestionDoc,
+      teams:trialDetails.teams || []
     };
   };
