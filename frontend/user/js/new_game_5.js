@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (mediaContainer && currentQuestion) {
       const mediaUrl = currentQuestion.mediaUrl;
-      const fileExtension = mediaUrl.split('.').pop().toLowerCase();
+      const fileExtension = mediaUrl.split(".").pop().toLowerCase();
       const questionType = currentQuestion.type.toLowerCase();
 
       if (["jpg", "jpeg", "png", "gif", "webp"].includes(fileExtension)) {
@@ -155,6 +155,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (error) {
     console.error("❌ Error fetching game data:", error);
     alert("Failed to load game data. Please try again.");
+    [
+      "selectedCategoryId",
+      "selectedSubcategoryIds",
+      "gameId",
+      "currentQuestion",
+      "currentRound",
+      "currentQuestionIndex",
+      "parentCategory",
+      "assignedTeam",
+      "resultGameId"
+    ].forEach((key) => {
+      sessionStorage.removeItem(key);
+    });
+    window.location.href = "my_game.html";
   }
 });
 

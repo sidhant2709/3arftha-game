@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const gameId = sessionStorage.getItem("gameId");
   const token = sessionStorage.getItem("authToken");
   const apiUrl = `http://localhost:9090/api/games/${gameId}`;
-  const subCategoryId = JSON.parse(sessionStorage.getItem("selectedSubcategoryIds")) || [];
+  const subCategoryId =
+    JSON.parse(sessionStorage.getItem("selectedSubcategoryIds")) || [];
   const assignedTeam = JSON.parse(sessionStorage.getItem("assignedTeam"));
   const parentCategory = sessionStorage.getItem("parentCategory");
   const currrentRound = sessionStorage.getItem("currentRound");
@@ -17,11 +18,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const roundElement = document.querySelector(".round_btn #round");
   roundElement.textContent = currrentRound;
 
-  const questionIndexElement = document.querySelector(".round_btn #question_no");
+  const questionIndexElement = document.querySelector(
+    ".round_btn #question_no"
+  );
   questionIndexElement.textContent = currentQuestionIndex;
 
   const roundPoints = document.querySelector(".round_points");
-  roundPoints.textContent = currrentRound * 10
+  roundPoints.textContent = currrentRound * 10;
 
   const fetchData = async (url, options) => {
     const response = await fetch(url, options);
@@ -32,14 +35,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   const submitAnswer = async (payload) => {
-    const submitResponse = await fetch("http://localhost:9090/api/games/submit-answer", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify(payload),
-    });
+    const submitResponse = await fetch(
+      "http://localhost:9090/api/games/submit-answer",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(payload),
+      }
+    );
 
     if (!submitResponse.ok) {
       throw new Error("Failed to submit answer.");
@@ -47,17 +53,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   const startNextQuestion = async (userId, subCategoryId, teams) => {
-    const startResponse = await fetch(`http://localhost:9090/api/games/${userId}/start`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({
-        subcategories: subCategoryId,
-        teams: teams,
-      }),
-    });
+    const startResponse = await fetch(
+      `http://localhost:9090/api/games/${userId}/start`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          subcategories: subCategoryId,
+          teams: teams,
+        }),
+      }
+    );
 
     if (!startResponse.ok) {
       throw new Error("Failed to start the next question.");
@@ -65,24 +74,36 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const startResult = await startResponse.json();
     sessionStorage.setItem("gameId", startResult.gameId);
-    sessionStorage.setItem("currentQuestion", JSON.stringify(startResult.question));
+    sessionStorage.setItem(
+      "currentQuestion",
+      JSON.stringify(startResult.question)
+    );
     sessionStorage.setItem("currentRound", startResult.currentRound);
-    sessionStorage.setItem("currentQuestionIndex", startResult.currentQuestionIndex);
+    sessionStorage.setItem(
+      "currentQuestionIndex",
+      startResult.currentQuestionIndex
+    );
     sessionStorage.setItem("parentCategory", startResult.parentCategory);
-    sessionStorage.setItem("assignedTeam", JSON.stringify(startResult.assignedTeam));
+    sessionStorage.setItem(
+      "assignedTeam",
+      JSON.stringify(startResult.assignedTeam)
+    );
 
     if (startResult.gameId) {
       window.location.href = "new_game%20_5.html";
     } else {
-      if(startResult.gameId) {}
-      sessionStorage.removeItem("gameId");
-      sessionStorage.removeItem("currentQuestion");
-      sessionStorage.removeItem("selectedCategoryId");
-      sessionStorage.removeItem("selectedSubcategoryIds");
-      sessionStorage.removeItem("currentRound");
-      sessionStorage.removeItem("currentQuestionIndex");
-      sessionStorage.removeItem("parentCategory");
-      sessionStorage.removeItem("assignedTeam");
+      [
+        "gameId",
+        "currentQuestion",
+        "selectedCategoryId",
+        "selectedSubcategoryIds",
+        "currentRound",
+        "currentQuestionIndex",
+        "parentCategory",
+        "assignedTeam",
+      ].forEach((key) => {
+        sessionStorage.removeItem(key);
+      });
       window.location.href = "new_game%20_8.html";
     }
   };
@@ -97,8 +118,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     const teams = data.teams;
-    const leftList = document.querySelector(".lbm_allteam_wrapper ul:first-of-type");
-    const rightList = document.querySelector(".lbm_allteam_wrapper ul:last-of-type");
+    const leftList = document.querySelector(
+      ".lbm_allteam_wrapper ul:first-of-type"
+    );
+    const rightList = document.querySelector(
+      ".lbm_allteam_wrapper ul:last-of-type"
+    );
 
     leftList.innerHTML = "";
     rightList.innerHTML = "";
