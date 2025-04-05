@@ -1,246 +1,259 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<!-- Meta setup -->
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="keywords" content="">
-		<meta name="decription" content="">
-		<meta name="designer" content="">
-		
-		<!-- Title -->
-		<title>My Game</title>
-		
-		<!-- Fav Icon -->
-		<link rel="icon" href="images/favicon.ico">
-		
-		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-		<!-- plugin css here -->
-		<link rel="stylesheet" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<head>
+	<!-- Meta setup -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="">
+	<meta name="decription" content="">
+	<meta name="designer" content="">
 
-		<!-- Include Bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.css">
-		
-		<!-- Main StyleSheet -->
-		<link rel="stylesheet" href="style.css">	
-		
-		<!-- Responsive CSS -->
-		<link rel="stylesheet" href="css/responsive.css">	
-		
-	</head>
-	<body style="background: #22194A;">
-		<!--[if lte IE 9]>
+	<!-- Title -->
+	<title>My Game</title>
+
+	<!-- Fav Icon -->
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	<!-- plugin css here -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Main StyleSheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body style="background: #22194A;">
+	<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-		<!-- header-area start -->
-		<div class="header_top d-block d-lg-none">
-			<div class="container">
-				<ul>
-					<li><button><b>En</b> / Ar</button></li>
-					<li><img class="vline" src="images/vector/vector20.png" alt=""></li>
-					<li><a href="index.html"><img class="profile" src="images/vector/vector21.png" alt=""> <span class="profile_name">Ahmad Ali</span></a></li>
-				</ul>
-			</div>
+	<!-- header-area start -->
+	<div class="header_top d-block d-lg-none">
+		<div class="container">
+			<ul>
+				<li><button><b>En</b> / Ar</button></li>
+				<li><img class="vline" src="images/vector/vector20.png" alt=""></li>
+				<li><a href="index.html"><img class="profile" src="images/vector/vector21.png" alt=""> <span
+							class="profile_name">Ahmad Ali</span></a></li>
+			</ul>
 		</div>
-		<header class="header_area position-relative">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-4 col-6">
-						<div class="header_left_content">
-							<div class="games_remaining">Games Remaining: <span>0</span></div>
-							<div class="hlc_cart">
-								<img src="images/logo/buy_bundles.png" alt="">
-								<span class="vl"></span>
-								<a href="#"><img src="images/vector/vector1.png" alt=""></a>
-							</div>
+	</div>
+	<header class="header_area position-relative">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 col-6">
+					<div class="header_left_content">
+						<div class="games_remaining">Games Remaining: <span>0</span></div>
+						<div class="hlc_cart">
+							<img src="images/logo/buy_bundles.png" alt="">
+							<span class="vl"></span>
+							<a href="#"><img src="images/vector/vector1.png" alt=""></a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-6">
-						<div class="header_middle_logo">
-							<a href="index.html"><img src="images/logo/header_logo.png" alt=""></a>
-							<div class="hamburger d-flex d-lg-none" onclick="toggleHamburger(this)">
-								<div class="bar"></div>
-								<div class="bar"></div>
-								<div class="bar"></div>
-							</div>
+				</div>
+				<div class="col-lg-4 col-6">
+					<div class="header_middle_logo">
+						<a href="index.html"><img src="images/logo/header_logo.png" alt=""></a>
+						<div class="hamburger d-flex d-lg-none" onclick="toggleHamburger(this)">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="menu_wrapper">
-							<div class="header_right_content d-lg-block d-none">
-								<div class="hrc_profile">
-									<ul>
-										<li><button><b>En</b> / Ar</button></li>
-										<li><img class="vline" src="images/vector/vector31.png" alt=""></li>
-										<li class="dropdown">
-											<a href="#" id="navbarDarkDropdownMenuLink"  data-bs-toggle="dropdown" aria-expanded="false"><img class="profile" src="images/vector/vector21.png" alt=""> <span class="profile_name">Ahmad Ali</span></a>
-											<div class="profile_submenu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-												<a href="manage_profile.html">My Account</a>
-												<hr>
-												<a href="my_game.html">My Game</a>
-												<hr>
-												<a href="index.html">Exit <img src="images/vector/vector75.png" alt=""></a>
-												<img src="images/vector/vector76.png" alt="">
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="hrc_menu_item">
+				</div>
+				<div class="col-lg-4">
+					<div class="menu_wrapper">
+						<div class="header_right_content d-lg-block d-none">
+							<div class="hrc_profile">
 								<ul>
-									<li><a href="#" class="active">About Game</a></li>
-									<li><a href="#">Game Packages</a></li>
-									<li><a href="rules.html"> Rules</a></li>
+									<li><button><b>En</b> / Ar</button></li>
+									<li><img class="vline" src="images/vector/vector31.png" alt=""></li>
+									<li class="dropdown">
+										<a href="#" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown"
+											aria-expanded="false"><img class="profile" src="images/vector/vector21.png"
+												alt=""> <span class="profile_name">Ahmad Ali</span></a>
+										<div class="profile_submenu dropdown-menu"
+											aria-labelledby="navbarDarkDropdownMenuLink">
+											<a href="manage_profile.html">My Account</a>
+											<hr>
+											<a href="my_game.html">My Game</a>
+											<hr>
+											<a href="index.html">Exit <img src="images/vector/vector75.png" alt=""></a>
+											<img src="images/vector/vector76.png" alt="">
+										</div>
+									</li>
 								</ul>
 							</div>
-							<div class="header_right_content d-lg-none d-block">
-								<div class="hrc_btn">
-									<ul>
-										<li class="lang_btn d-none d-lg-bloc"><a href="#">En <span>/ Ar</span></a></li>
-										<li class="vertical_line d-none d-lg-bloc"></li>
-										<li class="login_btn d-none d-lg-block"><a href="#">Login</a></li>
-										<li class="login_btn d-block d-lg-none"><a href="#">Log Out</a></li>
-									</ul>
-								</div>
+						</div>
+						<div class="hrc_menu_item">
+							<ul>
+								<li><a href="#" class="active">About Game</a></li>
+								<li><a href="#">Game Packages</a></li>
+								<li><a href="rules.html"> Rules</a></li>
+							</ul>
+						</div>
+						<div class="header_right_content d-lg-none d-block">
+							<div class="hrc_btn">
+								<ul>
+									<li class="lang_btn d-none d-lg-bloc"><a href="#">En <span>/ Ar</span></a></li>
+									<li class="vertical_line d-none d-lg-bloc"></li>
+									<li class="login_btn d-none d-lg-block"><a href="#">Login</a></li>
+									<li class="login_btn d-block d-lg-none"><a href="#">Log Out</a></li>
+								</ul>
 							</div>
 						</div>
-					</div>					
-				</div>					
+					</div>
+				</div>
 			</div>
-		</header>
-		<!-- header-area end -->
+		</div>
+	</header>
+	<!-- header-area end -->
 
-		<!-- my_game_title-area start -->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="mg_test_knowledge_content">
-                            <h5>An interactive group game in which we test your knowledge and culture</h5>
-                            <span>To create a new game, click on (New game) | To restore previous games, click (My games)</span>
-                            <ul>
-                                <li><a href="new_game.html">New Game</a></li>
-                                <li><a href="#">My Game</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-		<!-- my_game_title-area end -->	
+	<!-- my_game_title-area start -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="mg_test_knowledge_content">
+						<h5>An interactive group game in which we test your knowledge and culture</h5>
+						<span>To create a new game, click on (New game) | To restore previous games, click (My
+							games)</span>
+						<ul>
+							<li><a href="new_game.html">New Game</a></li>
+							<li><a href="#">My Game</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- my_game_title-area end -->
 
-		<!-- my_game_content-area start -->
-        <section class="my_game_content_area">
-            <div class="container">
-                <div class="my_game_content_wrapper">
-                    <div class="mygame_inner_container">
-                        <div class="mygame_thumb">
-                            <img class="thumb" src="images/vector/vector22.png" alt="">
-                            <h1>My games</h1>
-                            <ul>
-                                <li><a href="#"><span class="d-none d-sm-inline">Buy New Game</span> <img src="images/vector/vector1.png" alt=""></a></li>
-                                <li class="d-none d-sm-block"><input type="search" placeholder="Search by name"></li>
-                            </ul>
-                        </div>
-                        <div class="testgame_card_wrapper position-relative">
-                            <img class="overlay_vector" src="images/vector/vector24.png" alt="">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testgame_intro">
-                                        <h1>Test Game</h1>
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">I play</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 position-relative borderleft1px_8D8D8D">
-                                    <div class="testgame_card_item_wrapper">
-                                        <div class="testgame_card_item">
-                                            <a href="#">
-                                                <img src="images/vector/vector25.png" alt="">
-                                                <span>La casa <br> de papel</span>
-                                            </a>
-                                        </div>
-                                        <div class="testgame_card_item">
-                                            <a href="#">
-                                                <img src="images/vector/vector26.png" alt="">
-                                                <span>breaking <br> bad</span>
-                                            </a>
-                                        </div>
-                                        <div class="testgame_card_item">
-                                           <a href="#">
-                                                <img src="images/vector/vector27.png" alt="">
-                                                <span>Marvel</span>
-                                           </a>
-                                        </div>
-                                        <div class="testgame_card_item">
-                                            <a href="#">
-                                                <img src="images/vector/vector28.png" alt="">
-                                                <span>Game of <br> thrones</span>
-                                            </a>
-                                        </div>
-                                        <div class="testgame_card_item">
-                                            <a href="#">
-                                                <img src="images/vector/vector29.png" alt="">
-                                                <span>UFC</span>
-                                            </a>
-                                        </div>
-                                        <div class="testgame_card_item">
-                                            <a href="#">
-                                                <img src="images/vector/vector30.png" alt="">
-                                                <span>La casa <br> de papel</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <a class="number_time_play" href="#">Number of times played: 04</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-		<!-- my_game_content-area end -->	
+	<!-- my_game_content-area start -->
+	<section class="my_game_content_area">
+		<div class="container">
+			<div class="my_game_content_wrapper">
+				<div class="mygame_inner_container">
+					<div class="mygame_thumb">
+						<img class="thumb" src="images/vector/vector22.png" alt="">
+						<h1>My games</h1>
+						<ul>
+							<li><a href="#"><span class="d-none d-sm-inline">Buy New Game</span> <img
+										src="images/vector/vector1.png" alt=""></a></li>
+							<li class="d-none d-sm-block"><input type="search" placeholder="Search by name"></li>
+						</ul>
+					</div>
+					<div class="testgame_card_wrapper position-relative">
+						<img class="overlay_vector" src="images/vector/vector24.png" alt="">
+						<div class="row g-0 align-items-center">
+							<div class="col-md-6">
+								<div class="testgame_intro">
+									<h1>Test Game</h1>
+									<button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">I
+										play</button>
+								</div>
+							</div>
+							<div class="col-md-6 position-relative borderleft1px_8D8D8D">
+								<div class="testgame_card_item_wrapper">
+									<div class="testgame_card_item">
+										<a href="#">
+											<img src="images/vector/vector25.png" alt="">
+											<span>La casa <br> de papel</span>
+										</a>
+									</div>
+									<div class="testgame_card_item">
+										<a href="#">
+											<img src="images/vector/vector26.png" alt="">
+											<span>breaking <br> bad</span>
+										</a>
+									</div>
+									<div class="testgame_card_item">
+										<a href="#">
+											<img src="images/vector/vector27.png" alt="">
+											<span>Marvel</span>
+										</a>
+									</div>
+									<div class="testgame_card_item">
+										<a href="#">
+											<img src="images/vector/vector28.png" alt="">
+											<span>Game of <br> thrones</span>
+										</a>
+									</div>
+									<div class="testgame_card_item">
+										<a href="#">
+											<img src="images/vector/vector29.png" alt="">
+											<span>UFC</span>
+										</a>
+									</div>
+									<div class="testgame_card_item">
+										<a href="#">
+											<img src="images/vector/vector30.png" alt="">
+											<span>La casa <br> de papel</span>
+										</a>
+									</div>
+								</div>
+								<a class="number_time_play" href="#">Number of times played: 04</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- my_game_content-area end -->
 
-        <!-- Modal -->
-        <div class="modal mygame_modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body mygame_modal p-0">
-                    <h4>Pick up where you left off</h4>
-                    <p>You have an active game, do you want to <br> continue playing or replay?</p>
-                    <div>
-                        <button type="button" data-bs-dismiss="modal">Start over</button>
-                        <button type="button" data-bs-dismiss="modal">Continue</button>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                
+	<!-- Modal -->
+	<div class="modal mygame_modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body mygame_modal p-0">
+					<h4>Pick up where you left off</h4>
+					<p>You have an active game, do you want to <br> continue playing or replay?</p>
+					<div>
+						<button type="button" data-bs-dismiss="modal" data-game-id="67b44b2b6cac7e10ec29fca6" id="my-button-start">Start over</button>
+						<button type="button" data-bs-dismiss="modal" data-game-id="67b44b2b6cac7e10ec29fca7" id="my-button-continue">Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		
-		<!-- Main jQuery -->
-		<script src="js/jquery-3.4.1.min.js"></script>
 
-		<!-- jquery plugin script -->
-		<script src="js/owl.carousel.min.js"></script>
-		
-		<!-- Bootstrap.bundle Script -->
-		<script src="js/bootstrap.bundle.min.js"></script>
-		
-		<!-- Custom jQuery -->
-		<script src="js/scripts.js"></script>
-		
-		<!-- Scroll-Top button -->
-        <a href="#" class="scrolltotop" style="display: none;">
-            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-            <span class="pluse"></span>
-            <span class="pluse2"></span>
-        </a>
-		
-	</body>
+
+	<!-- Main jQuery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- jquery plugin script -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- Bootstrap.bundle Script -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom jQuery -->
+	<script src="js/scripts.js"></script>
+
+	<script src="js/new_game_5.js"></script>
+
+	<!-- Scroll-Top button -->
+	<a href="#" class="scrolltotop" style="display: none;">
+		<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+		<span class="pluse"></span>
+		<span class="pluse2"></span>
+	</a>
+
+</body>
+
 </html>

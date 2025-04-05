@@ -1993,3 +1993,30 @@ figure {
     font-weight: 500;
     line-height: 158.5%;
 }
+
+/*========= creation panel page stye start hare ======== */
+
+.create-catagory-form .form-title h4 {
+    color: #001835;
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 158.5%;
+}
+
+.create-catagory-form .question-block {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.upload-images {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.border-right-custom {
+    border-right: 1px solid  #DDDDDD;
+}

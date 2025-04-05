@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const startResult = await startResponse.json();
+    console.log("Start Result:", startResult);
     sessionStorage.setItem("gameId", startResult.gameId);
     sessionStorage.setItem("currentQuestion", JSON.stringify(startResult.question));
     sessionStorage.setItem("currentRound", startResult.currentRound);
@@ -74,6 +75,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (startResult.gameId) {
       window.location.href = "new_game%20_5.html";
     } else {
+      if(startResult.gameId) {}
       sessionStorage.removeItem("gameId");
       sessionStorage.removeItem("currentQuestion");
       sessionStorage.removeItem("selectedCategoryId");

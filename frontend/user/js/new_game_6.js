@@ -67,28 +67,49 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Update answerMedia
-    const answerMediaContainer = document.querySelector(
-      ".image-container .thumb4"
-    );
-
+    const answerMediaContainer = document.querySelector(".image-container .thumb4");
     const loader = document.createElement("div");
     loader.className = "loader";
     answerMediaContainer.parentNode.insertBefore(loader, answerMediaContainer);
 
-    // Convert Base64 to a valid Data URL
     if (answerMediaContainer && currentQuestion) {
-      answerMediaContainer.onload = () => {
-        loader.style.display = "none";
-        answerMediaContainer.style.display = "block";
-      };
-      answerMediaContainer.onerror = () => {
-        loader.style.display = "none";
+      const answerMediaUrl = currentQuestion.answerMediaUrl;
+      const questionType = currentQuestion.type.toLowerCase();
+
+      if (questionType === "image") {
+        answerMediaContainer.onload = () => {
+          loader.style.display = "none";
+          answerMediaContainer.style.display = "block";
+        };
+        answerMediaContainer.onerror = () => {
+          loader.style.display = "none";
+          answerMediaContainer.style.display = "none";
+          alert("Failed to load image.");
+        };
+        answerMediaContainer.src = answerMediaUrl;
+        answerMediaContainer.alt = "Answer Image";
         answerMediaContainer.style.display = "none";
-        alert("Failed to load image.");
-      };
-      answerMediaContainer.src = currentQuestion.answerMediaUrl;
-      answerMediaContainer.alt = "Answer Image";
-      answerMediaContainer.style.display = "none";
+      } else if (questionType === "video") {
+        const videoElement = document.createElement("video");
+        videoElement.className = "thumb4";
+        videoElement.controls = true;
+        videoElement.onloadeddata = () => {
+          loader.style.display = "none";
+          videoElement.style.display = "block";
+        };
+        videoElement.onerror = () => {
+          loader.style.display = "none";
+          videoElement.style.display = "none";
+          alert("Failed to load video.");
+        };
+        videoElement.src = answerMediaUrl;
+        videoElement.style.display = "none";
+        answerMediaContainer.replaceWith(videoElement);
+      } else {
+        // Handle unsupported media types
+        loader.style.display = "none";
+        alert("Unsupported media type.");
+      }
     }
   } catch (error) {
     console.error("❌ Error fetching game data:", error);

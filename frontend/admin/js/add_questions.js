@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
       const data = await response.json();
-      subCategorySelect.innerHTML = `<option value="" disabled selected>Select a sub category</option>` + // Add placeholder option
+      subCategorySelect.innerHTML = `<option value="" disabled selected>Select a sub category</option>` +
         data.subcategories
           .map((subCategory) => `<option value="${subCategory._id}">${subCategory.name}</option>`)
           .join("");
@@ -56,9 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Handle form submission
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    console.log("Form submitted");
-
-
     const formData = new FormData();
     formData.append("category", subCategorySelect.value);
     formData.append("content", document.getElementById("Question").value);

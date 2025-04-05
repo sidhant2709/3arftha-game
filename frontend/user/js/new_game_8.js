@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     const data = await response.json();
-    console.log("Leaderboard data:", data);
 
     const teams = data.teams;
 
@@ -28,6 +27,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     const winnerNameElement = document.querySelector(".winner_team_content h3");
     if (winnerNameElement) {
       winnerNameElement.textContent = winningTeam.name;
+    }
+
+    const backToBoardButton = document.getElementById("back_to_board");
+
+    if (backToBoardButton) {
+      backToBoardButton.addEventListener("click", () => {
+        sessionStorage.removeItem("resultGameId");
+      });
     }
 
     const leaderboardContent = document.querySelector(".winnerteam_list_content");

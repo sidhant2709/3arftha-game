@@ -10,8 +10,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const updateStopwatchDisplay = () => {
     const minutes = Math.floor(elapsedTime / 60);
     const seconds = elapsedTime % 60;
-    document.querySelector(".leaderboard_timer_content .minute").textContent = String(minutes).padStart(2, '0');
-    document.querySelector(".leaderboard_timer_content .second").textContent = String(seconds).padStart(2, '0');
+    document.querySelector(".leaderboard_timer_content .minute").textContent =
+      String(minutes).padStart(2, "0");
+    document.querySelector(".leaderboard_timer_content .second").textContent =
+      String(seconds).padStart(2, "0");
   };
 
   const startStopwatch = () => {
@@ -32,8 +34,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.querySelector(".play_pause").addEventListener("click", () => {
     isPaused = !isPaused;
-    document.querySelector(".play_pause i").classList.toggle("fa-pause", !isPaused);
-    document.querySelector(".play_pause i").classList.toggle("fa-play", isPaused);
+    document
+      .querySelector(".play_pause i")
+      .classList.toggle("fa-pause", !isPaused);
+    document
+      .querySelector(".play_pause i")
+      .classList.toggle("fa-play", isPaused);
   });
 
   document.querySelector(".reset").addEventListener("click", resetStopwatch);
@@ -56,7 +62,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const currrentRound = sessionStorage.getItem("currentRound");
     const currentQuestionIndex = sessionStorage.getItem("currentQuestionIndex");
 
-
     const teamRoleElement = document.querySelector("#teamRole span");
     teamRoleElement.textContent = assignedTeam.name;
 
@@ -66,11 +71,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     const roundElement = document.querySelector(".round_btn #round");
     roundElement.textContent = currrentRound;
 
-    const questionIndexElement = document.querySelector(".round_btn #question_no");
+    const questionIndexElement = document.querySelector(
+      ".round_btn #question_no"
+    );
     questionIndexElement.textContent = currentQuestionIndex;
 
     const roundPoints = document.querySelector(".round_points");
-    roundPoints.textContent = currrentRound * 10
+    roundPoints.textContent = currrentRound * 10;
 
     const teamElements = document.querySelectorAll(".lb_left_team_content");
 
@@ -106,20 +113,44 @@ document.addEventListener("DOMContentLoaded", async () => {
     mediaContainer.parentNode.insertBefore(loader, mediaContainer);
 
     if (mediaContainer && currentQuestion) {
-      mediaContainer.onload = () => {
-        loader.style.display = "none";
-        mediaContainer.style.display = "block";
-      };
-      mediaContainer.onerror = () => {
-        loader.style.display = "none";
-        mediaContainer.style.display = "none";
-        alert("Failed to load image.");
-      };
-      mediaContainer.src = currentQuestion.mediaUrl;
-      mediaContainer.alt = "Question Image";
-      mediaContainer.style.display = "none";
-    }
+      const mediaUrl = currentQuestion.mediaUrl;
+      const questionType = currentQuestion.type.toLowerCase(); // Convert to lowercase
 
+      if (questionType === "image") {
+        mediaContainer.onload = () => {
+          loader.style.display = "none";
+          mediaContainer.style.display = "block";
+        };
+        mediaContainer.onerror = () => {
+          loader.style.display = "none";
+          mediaContainer.style.display = "none";
+          alert("Failed to load image.");
+        };
+        mediaContainer.src = mediaUrl;
+        mediaContainer.alt = "Question Image";
+        mediaContainer.style.display = "none";
+      } else if (questionType === "video") {
+        const videoElement = document.createElement("video");
+        videoElement.className = "logo3";
+        videoElement.controls = true;
+        videoElement.onloadeddata = () => {
+          loader.style.display = "none";
+          videoElement.style.display = "block";
+        };
+        videoElement.onerror = () => {
+          loader.style.display = "none";
+          videoElement.style.display = "none";
+          alert("Failed to load video.");
+        };
+        videoElement.src = mediaUrl;
+        videoElement.style.display = "none";
+        mediaContainer.replaceWith(videoElement);
+      } else {
+        // Handle unsupported media types
+        loader.style.display = "none";
+        alert("Unsupported media type.");
+      }
+    }
   } catch (error) {
     console.error("❌ Error fetching game data:", error);
     alert("Failed to load game data. Please try again.");
