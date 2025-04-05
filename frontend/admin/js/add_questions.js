@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const subCategorySelect = document.getElementById("q-sub-category");
   const form = document.querySelector(".add-question-wrapper form");
 
-  subCategorySelect.innerHTML = `<option value="" disabled selected>Select a sub category</option>`; // Add placeholder option
+  let fileNameQuestionSpan = document.getElementById("question-file-media");
+  let fileNameAnswerSpan = document.getElementById("answer-file-media");
+
+
+  subCategorySelect.innerHTML = `<option value="" disabled selected>Select a sub category</option>`;
 
   // Fetch categories
   async function fetchCategories() {
@@ -53,23 +57,62 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchSubCategories(selectedCategoryId);
   });
 
+  document
+    .getElementById("question-file")
+    .addEventListener("change", (event) => {
+      const fileInput = event.target;
+      if (fileInput.files.length > 0) {
+        fileNameQuestionSpan.textContent = fileInput.files[0].name;
+      } else {
+        fileNameQuestionSpan.textContent = "No file selected";
+      }
+    });
+
+    document
+    .getElementById("answer-file")
+    .addEventListener("change", (event) => {
+      const fileInput = event.target;
+      if (fileInput.files.length > 0) {
+        fileNameAnswerSpan.textContent = fileInput.files[0].name;
+      } else {
+        fileNameAnswerSpan.textContent = "No file selected";
+      }
+    });
+
   // Handle form submission
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
+    const question = document.getElementById("Question").value;
+    const answer = document.getElementById("answer").value;
+    const subCategory = subCategorySelect.value;
+
     const formData = new FormData();
-    formData.append("category", subCategorySelect.value);
-    formData.append("content", document.getElementById("Question").value);
-    formData.append("correctAnswer", document.getElementById("answer").value);
-    formData.append("type", "image");
+    formData.append("category", subCategory);
+    formData.append("content", question);
+    formData.append("correctAnswer", answer);
 
     const mediaFile = document.getElementById("question-file").files[0];
     if (mediaFile) {
+      const fileExtension = mediaFile.name.split(".").pop().toLowerCase();
+      if (["jpg", "jpeg", "png", "gif", "webp"].includes(fileExtension)) {
+        formData.append("type", "image");
+      } else if (["mp4", "webm", "ogg"].includes(fileExtension)) {
+        formData.append("type", "video");
+      } else {
+        alert("Unsupported file type. Please upload an image or video.");
+        return;
+      }
       formData.append("media", mediaFile);
     }
 
     const answerMediaFile = document.getElementById("answer-file").files[0];
     if (answerMediaFile) {
       formData.append("answerMedia", answerMediaFile);
+    }
+
+    if (!question || !answer || !subCategory) {
+      alert("Please fill in all fields.");
+      return;
     }
 
     try {
@@ -84,6 +127,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         alert("Question added successfully!");
         form.reset();
+        fileNameQuestionSpan.textContent = "";
+        fileNameAnswerSpan.textContent = "";
       } else {
         const errorData = await response.json();
         console.error("Error adding question:", errorData);
@@ -94,6 +139,15 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("An error occurred while submitting the form.");
     }
   });
+
+  document
+    .getElementById("cancel-button-add-question")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      fileNameQuestionSpan.textContent = "";
+      fileNameAnswerSpan.textContent = "";
+      form.reset();
+    });
 
   // Initialize categories on page load
   fetchCategories();

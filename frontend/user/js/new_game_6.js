@@ -74,9 +74,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (answerMediaContainer && currentQuestion) {
       const answerMediaUrl = currentQuestion.answerMediaUrl;
+      const fileExtension = answerMediaUrl.split('.').pop().toLowerCase();
       const questionType = currentQuestion.type.toLowerCase();
 
-      if (questionType === "image") {
+      if (["jpg", "jpeg", "png", "gif", "webp"].includes(fileExtension)) {
         answerMediaContainer.onload = () => {
           loader.style.display = "none";
           answerMediaContainer.style.display = "block";
@@ -89,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         answerMediaContainer.src = answerMediaUrl;
         answerMediaContainer.alt = "Answer Image";
         answerMediaContainer.style.display = "none";
-      } else if (questionType === "video") {
+      } else if (["mp4", "webm", "ogg"].includes(fileExtension)) {
         const videoElement = document.createElement("video");
         videoElement.className = "thumb4";
         videoElement.controls = true;

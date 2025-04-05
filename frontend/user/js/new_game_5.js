@@ -114,9 +114,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (mediaContainer && currentQuestion) {
       const mediaUrl = currentQuestion.mediaUrl;
-      const questionType = currentQuestion.type.toLowerCase(); // Convert to lowercase
+      const fileExtension = mediaUrl.split('.').pop().toLowerCase();
+      const questionType = currentQuestion.type.toLowerCase();
 
-      if (questionType === "image") {
+      if (["jpg", "jpeg", "png", "gif", "webp"].includes(fileExtension)) {
         mediaContainer.onload = () => {
           loader.style.display = "none";
           mediaContainer.style.display = "block";
@@ -129,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         mediaContainer.src = mediaUrl;
         mediaContainer.alt = "Question Image";
         mediaContainer.style.display = "none";
-      } else if (questionType === "video") {
+      } else if (["mp4", "webm", "ogg"].includes(fileExtension)) {
         const videoElement = document.createElement("video");
         videoElement.className = "logo3";
         videoElement.controls = true;
