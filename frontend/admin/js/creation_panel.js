@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const categorySelectForSubcategories = document.getElementById("q-category");
 
   const categorySelectForDelete = document.getElementById("q-category-delete");
-  const subCategorySelectForDelete = document.getElementById("q-sub-category-delete");
+  const subCategorySelectForDelete = document.getElementById(
+    "q-sub-category-delete"
+  );
   subCategorySelectForDelete.disabled = true;
 
   const deleteCategoriesform = document.querySelector("#delete-category-form");
-  const deleteSubCategoriesform = document.querySelector("#delete-sub-category-form");
+  const deleteSubCategoriesform = document.querySelector(
+    "#delete-sub-category-form"
+  );
 
   const addSubCategoriesform = document.querySelector("#add-sub-category-form");
   const addCategoriesForm = document.querySelector("#add-category-form");
@@ -53,9 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
       const data = await response.json();
-      subCategorySelectForDelete.innerHTML = `<option value="" disabled selected>Select a sub category for Delete</option>` +
+      subCategorySelectForDelete.innerHTML =
+        `<option value="" disabled selected>Select a sub category for Delete</option>` +
         data.subcategories
-          .map((subCategory) => `<option value="${subCategory._id}">${subCategory.name}</option>`)
+          .map(
+            (subCategory) =>
+              `<option value="${subCategory._id}">${subCategory.name}</option>`
+          )
           .join("");
     } catch (error) {
       console.error("Error fetching subcategories:", error);
@@ -76,13 +84,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedCategoryId = categorySelectForDelete.value;
     const selectedSubCategoryId = subCategorySelectForDelete.value;
 
+    if (!selectedCategoryId || !selectedSubCategoryId) {
+      alert("Please select a category and a subcategory to delete.");
+      return;
+    }
     try {
-      const response = await fetch(`${BASE_URL}/categories/${selectedSubCategoryId}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        `${BASE_URL}/categories/${selectedSubCategoryId}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (response.ok) {
         alert("Subcategory deleted successfully!");
@@ -99,23 +114,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.getElementById("cancel-delete-sub-category").addEventListener("change", (event) => {
-    deleteSubCategoriesform.reset();
-  });
+  document
+    .getElementById("cancel-delete-sub-category")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      deleteSubCategoriesform.reset();
+    });
 
   // =================================================Delete category=====================================================
+
   deleteCategoriesform.addEventListener("submit", async (event) => {
     event.preventDefault();
     const selectedCategoryId = categorySelectForDelete.value;
 
+    if (!selectedCategoryId) {
+      alert("Please select a category to delete.");
+      return;
+    }
     try {
-      const response = await fetch(`${BASE_URL}/categories/${selectedCategoryId}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
+      const response = await fetch(
+        `${BASE_URL}/categories/${selectedCategoryId}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       if (response.ok) {
         alert("Category deleted successfully!");
         deleteCategoriesform.reset();
@@ -131,21 +156,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.getElementById("cancel-delete-category").addEventListener("change", (event) => {
-    deleteCategoriesform.reset();
-  });
+  document
+    .getElementById("cancel-delete-category")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      deleteCategoriesform.reset();
+    });
 
   // =================================================Create subcategory==================================================
-  document.getElementById("sub-category-image").addEventListener("change", (event) => {
-    const fileInput = event.target;
-    const fileNameSpan = document.getElementById("file-name-sub-category");
 
-    if (fileInput.files.length > 0) {
-      fileNameSpan.textContent = fileInput.files[0].name;
-    } else {
-      fileNameSpan.textContent = "No file selected";
-    }
-  });
+  document
+    .getElementById("sub-category-image")
+    .addEventListener("change", (event) => {
+      const fileInput = event.target;
+      const fileNameSpan = document.getElementById("file-name-sub-category");
+
+      if (fileInput.files.length > 0) {
+        fileNameSpan.textContent = fileInput.files[0].name;
+      } else {
+        fileNameSpan.textContent = "No file selected";
+      }
+    });
 
   addSubCategoriesform.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -158,11 +189,14 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.append("description", `Questios related to ${subCategoryName}.`);
 
     const mediaFile = document.getElementById("sub-category-image").files[0];
-    console.log(mediaFile);
     if (mediaFile) {
       formData.append("categoryPicture", mediaFile);
     }
 
+    if (!subCategoryName) {
+      alert("Please provide at least a subcategory name or an image.");
+      return;
+    }
     try {
       const response = await fetch(`${BASE_URL}/categories`, {
         method: "POST",
@@ -187,25 +221,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.getElementById("cancel-sub-category").addEventListener("change", (event) => {
-    addSubCategoriesform.reset();
-  });
+  document
+    .getElementById("cancel-sub-category")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      const fileNameSpan = document.getElementById("file-name-sub-category");
+      fileNameSpan.textContent = "";
+      addSubCategoriesform.reset();
+    });
 
   // =================================================Create category=====================================================
-  document.getElementById("category-image").addEventListener("change", (event) => {
-    const fileInput = event.target;
-    const fileNameSpan = document.getElementById("file-name-category");
 
-    if (fileInput.files.length > 0) {
-      fileNameSpan.textContent = fileInput.files[0].name;
-    } else {
-      fileNameSpan.textContent = "No file selected";
-    }
-  });
+  document
+    .getElementById("category-image")
+    .addEventListener("change", (event) => {
+      const fileInput = event.target;
+      const fileNameSpan = document.getElementById("file-name-category");
 
-  document.getElementById("cancel-category").addEventListener("change", (event) => {
-    addCategoriesForm.reset();
-  });
+      if (fileInput.files.length > 0) {
+        fileNameSpan.textContent = fileInput.files[0].name;
+      } else {
+        fileNameSpan.textContent = "No file selected";
+      }
+    });
 
   addCategoriesForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -218,6 +256,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const mediaFile = document.getElementById("category-image").files[0];
     if (mediaFile) {
       formData.append("categoryPicture", mediaFile);
+    }
+
+    if (!categoryName) {
+      alert("Please provide at least a category name.");
+      return;
     }
 
     try {
@@ -243,6 +286,15 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("An error occurred while adding the category.");
     }
   });
+
+  document
+    .getElementById("cancel-category")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      const fileNameSpan = document.getElementById("file-name-category");
+      fileNameSpan.textContent = "";
+      addCategoriesForm.reset();
+    });
 
   fetchCategories();
 });

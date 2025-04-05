@@ -24,7 +24,7 @@ $(document).ready(function () {
 			992:{
 				items:15
 			},
-			
+
 			1200:{
 				items:20
 			},
@@ -63,7 +63,7 @@ $(document).ready(function () {
 			992:{
 				items:15
 			},
-			
+
 			1200:{
 				items:20
 			},
@@ -121,7 +121,7 @@ $(document).ready(function () {
 
 		this.settings = null;
 
-		
+
 		this.options = $.extend({}, Owl.Defaults, options);
 
 		this.$element = $(element);
@@ -148,10 +148,10 @@ $(document).ready(function () {
 
 		this._items = [];
 
-		
+
 		this._clones = [];
 
-		
+
 		this._mergers = [];
 
 		this._invalidated = {};
@@ -218,7 +218,7 @@ $(document).ready(function () {
 		itemClass: 'owl-item',
 		centerClass: 'center',
 		activeClass: 'active'
-		
+
 	};
 
 	Owl.Width = {
@@ -1996,8 +1996,6 @@ $(document).ready(function () {
 		this._core.$element.on(this._handlers);
 
 		this._core.$element.on('click.owl.video', '.owl-video-play-icon', $.proxy(function(e) {
-			console.log('clicked');
-			
 			this.play(e);
 		}, this));
 	};
@@ -2138,16 +2136,16 @@ $(document).ready(function () {
 			width = video.width || '100%',
 			height = video.height || this._core.$stage.height(),
 			html, wrap;
-			
+
 		target.prev().find('img').css('display','none');
 
 		this._core.trigger('play', null, 'video');
-		
-		
+
+
 		if (this._playing) {
 			this.stop();
 		}
-		
+
 
 		if (video.type === 'youtube') {
 			html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/'
@@ -2372,7 +2370,7 @@ $(document).ready(function () {
 				}
 			}, this),
 			'mouseleave.owl.autoplay': $.proxy(function() {
-				
+
 				if ( this.core.settings.autoplayHoverPause && this.core.$element.find('.owl-video-playing').length == 0 ) {
 					this.autoplay();
 				}

@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const startResult = await startResponse.json();
-    console.log("Start Result:", startResult);
     sessionStorage.setItem("gameId", startResult.gameId);
     sessionStorage.setItem("currentQuestion", JSON.stringify(startResult.question));
     sessionStorage.setItem("currentRound", startResult.currentRound);
