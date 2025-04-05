@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
     subCategorySelectForDelete.disabled = false;
   });
 
+  // =================================================Delete subcategory=================================================
+
   deleteSubCategoriesform.addEventListener("submit", async (event) => {
     event.preventDefault();
     const selectedCategoryId = categorySelectForDelete.value;
@@ -97,6 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  document.getElementById("cancel-delete-sub-category").addEventListener("change", (event) => {
+    deleteSubCategoriesform.reset();
+  });
+
+  // =================================================Delete category=====================================================
   deleteCategoriesform.addEventListener("submit", async (event) => {
     event.preventDefault();
     const selectedCategoryId = categorySelectForDelete.value;
@@ -121,6 +128,22 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Error while deleting the category:", error);
       alert("An error occurred while deleting the category.");
+    }
+  });
+
+  document.getElementById("cancel-delete-category").addEventListener("change", (event) => {
+    deleteCategoriesform.reset();
+  });
+
+  // =================================================Create subcategory==================================================
+  document.getElementById("sub-category-image").addEventListener("change", (event) => {
+    const fileInput = event.target;
+    const fileNameSpan = document.getElementById("file-name-sub-category");
+
+    if (fileInput.files.length > 0) {
+      fileNameSpan.textContent = fileInput.files[0].name;
+    } else {
+      fileNameSpan.textContent = "No file selected";
     }
   });
 
@@ -162,6 +185,26 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error while adding the subcategory:", error);
       alert("An error occurred while adding the subcategory.");
     }
+  });
+
+  document.getElementById("cancel-sub-category").addEventListener("change", (event) => {
+    addSubCategoriesform.reset();
+  });
+
+  // =================================================Create category=====================================================
+  document.getElementById("category-image").addEventListener("change", (event) => {
+    const fileInput = event.target;
+    const fileNameSpan = document.getElementById("file-name-category");
+
+    if (fileInput.files.length > 0) {
+      fileNameSpan.textContent = fileInput.files[0].name;
+    } else {
+      fileNameSpan.textContent = "No file selected";
+    }
+  });
+
+  document.getElementById("cancel-category").addEventListener("change", (event) => {
+    addCategoriesForm.reset();
   });
 
   addCategoriesForm.addEventListener("submit", async (event) => {
