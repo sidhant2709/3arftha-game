@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (backToBoardButton) {
       backToBoardButton.addEventListener("click", () => {
         sessionStorage.removeItem("resultGameId");
+        sessionStorage.removeItem("lastRound");
       });
     }
 

@@ -3841,3 +3841,11 @@ RULES AREA START HERE
     object-position: center;
     display: none;
 }
+
+.round-announcement{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

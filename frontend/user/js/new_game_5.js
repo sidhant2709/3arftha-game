@@ -71,6 +71,56 @@ document.addEventListener("DOMContentLoaded", async () => {
     const roundElement = document.querySelector(".round_btn #round");
     roundElement.textContent = currrentRound;
 
+    if (currrentRound !== "1") {
+      const lastRound = sessionStorage.getItem("lastRound");
+
+      if (lastRound !== currrentRound) {
+        // Store the current round as the last displayed round
+        sessionStorage.setItem("lastRound", currrentRound);
+
+        const announcement = document.createElement("div");
+        announcement.className = "round-announcement";
+        announcement.textContent = `Round ${currrentRound} Begins!`;
+        document.body.appendChild(announcement);
+
+        // Add animation styles
+        announcement.style.position = "fixed";
+        announcement.style.top = "50%";
+        announcement.style.left = "50%";
+        announcement.style.width = "100%";
+        announcement.style.transform = "translateY(-50%)";
+        announcement.style.padding = "20px 40px";
+        announcement.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        announcement.style.color = "#fff";
+        announcement.style.fontSize = "5rem";
+        announcement.style.borderRadius = "10px";
+        announcement.style.textAlign = "center";
+        announcement.style.zIndex = "1000";
+        announcement.style.opacity = "0";
+        announcement.style.transition =
+          "opacity 0.5s ease, transform 0.5s ease";
+        // Trigger animation
+        setTimeout(() => {
+          announcement.style.opacity = "1";
+          announcement.style.transform = "translate(-50%, -50%) scale(1.1)";
+        }, 100);
+
+        // Trigger confetti animation
+        setTimeout(() => {
+          triggerConfetti(announcement); // Pass the announcement div as the container
+        }, 100);
+
+        // Remove announcement after animation
+        setTimeout(() => {
+          announcement.style.opacity = "0";
+          announcement.style.transform = "translate(-50%, -50%) scale(1)";
+          setTimeout(() => {
+            announcement.remove();
+          }, 500);
+        }, 3000);
+      }
+    }
+
     const questionIndexElement = document.querySelector(
       ".round_btn #question_no"
     );
@@ -164,7 +214,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       "currentQuestionIndex",
       "parentCategory",
       "assignedTeam",
-      "resultGameId"
+      "resultGameId",
     ].forEach((key) => {
       sessionStorage.removeItem(key);
     });
@@ -208,3 +258,193 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+function triggerConfetti(container) {
+  var random = Math.random,
+    cos = Math.cos,
+    sin = Math.sin,
+    PI = Math.PI,
+    PI2 = PI * 2,
+    timer = undefined,
+    frame = undefined,
+    confetti = [];
+
+  var spread = 50, // Reduced interval between confetti creation
+    sizeMin = 6,
+    sizeMax = 16,
+    eccentricity = 10,
+    deviation = 100,
+    dxThetaMin = -0.2, // Increased horizontal speed
+    dxThetaMax = 0.2, // Increased horizontal speed
+    dyMin = 0.2, // Increased vertical speed
+    dyMax = 0.4, // Increased vertical speed
+    dThetaMin = 0.5, // Increased rotation speed
+    dThetaMax = 1.0; // Increased rotation speed
+
+  var colorThemes = [
+    function () {
+      var colors = ["#EF5350", "#EC407A","#AB47BC","#7E57C2","#5C6BC0","#42A5F5","#29B6F6","#26C6DA","#26A69A","#66BB6A","#9CCC65","#D4E157","#FFEE58","#FFCA28","#FFA726","#FF7043","#8D6E63","#BDBDBD","#78909C"];
+      return colors[Math.floor(Math.random() * colors.length)];
+    },
+  ];
+
+  function color(r, g, b) {
+    return 'rgb(' + r + ',' + g + ',' + b + ')';
+  }
+
+  function interpolation(a, b, t) {
+    return ((1 - cos(PI * t)) / 2) * (b - a) + a;
+  }
+
+  var radius = 1 / eccentricity,
+    radius2 = radius + radius;
+
+  function createPoisson() {
+    var domain = [radius, 1 - radius],
+      measure = 1 - radius2,
+      spline = [0, 1];
+    while (measure) {
+      var dart = measure * random(),
+        i,
+        l,
+        interval,
+        a,
+        b,
+        c,
+        d;
+
+      for (i = 0, l = domain.length, measure = 0; i < l; i += 2) {
+        a = domain[i];
+        b = domain[i + 1];
+        interval = b - a;
+        if (dart < measure + interval) {
+          spline.push((dart += a - measure));
+          break;
+        }
+        measure += interval;
+      }
+      c = dart - radius;
+      d = dart + radius;
+
+      for (i = domain.length - 1; i > 0; i -= 2) {
+        l = i - 1;
+        a = domain[l];
+        b = domain[i];
+        if (a >= c && a < d) if (b > d) domain[l] = d;
+        else domain.splice(l, 2);
+        else if (a < c && b > c) if (b <= d) domain[i] = c;
+        else domain.splice(i, 0, c, d);
+      }
+
+      for (i = 0, l = domain.length, measure = 0; i < l; i += 2) measure += domain[i + 1] - domain[i];
+    }
+
+    return spline.sort();
+  }
+
+  function Confetto(theme, container) {
+    this.frame = 0;
+    this.outer = document.createElement('div');
+    this.inner = document.createElement('div');
+    this.outer.appendChild(this.inner);
+
+    var outerStyle = this.outer.style,
+      innerStyle = this.inner.style;
+    outerStyle.position = 'absolute';
+    outerStyle.width = sizeMin + sizeMax * random() + 'px';
+    outerStyle.height = sizeMin + sizeMax * random() + 'px';
+    innerStyle.width = '100%';
+    innerStyle.height = '100%';
+    innerStyle.backgroundColor = theme();
+
+    outerStyle.perspective = '50px';
+    outerStyle.transform = 'rotate(' + 360 * random() + 'deg)';
+    this.axis =
+      'rotate3D(' + cos(360 * random()) + ',' + cos(360 * random()) + ',0,';
+    this.theta = 360 * random();
+    this.dTheta = dThetaMin + dThetaMax * random();
+    innerStyle.transform = this.axis + this.theta + 'deg)';
+
+    const rect = container.getBoundingClientRect();
+    this.x = rect.width * random();
+    this.y = -deviation;
+    this.dx = sin(dxThetaMin + dxThetaMax * random());
+    this.dy = dyMin + dyMax * random();
+    outerStyle.left = this.x + 'px';
+    outerStyle.top = this.y + 'px';
+
+    this.splineX = createPoisson();
+    this.splineY = [];
+    for (var i = 1, l = this.splineX.length - 1; i < l; ++i)
+      this.splineY[i] = deviation * random();
+    this.splineY[0] = this.splineY[l] = deviation * random();
+
+    this.update = function (height, delta) {
+      this.frame += delta;
+      this.x += this.dx * delta;
+      this.y += this.dy * delta;
+      this.theta += this.dTheta * delta;
+
+      var phi = (this.frame % 7777) / 7777,
+        i = 0,
+        j = 1;
+      while (phi >= this.splineX[j]) i = j++;
+      var rho = interpolation(
+        this.splineY[i],
+        this.splineY[j],
+        (phi - this.splineX[i]) / (this.splineX[j] - this.splineX[i])
+      );
+      phi *= PI2;
+
+      outerStyle.left = this.x + rho * cos(phi) + 'px';
+      outerStyle.top = this.y + rho * sin(phi) + 'px';
+      innerStyle.transform = this.axis + this.theta + 'deg)';
+      return this.y > height + deviation;
+    };
+  }
+
+  function poof() {
+    if (!frame) {
+      if (!container) return;
+
+      var animationContainer = document.createElement('div');
+      animationContainer.style.position = 'absolute';
+      animationContainer.style.top = '0';
+      animationContainer.style.left = '0';
+      animationContainer.style.width = '100%';
+      animationContainer.style.height = '100%';
+      animationContainer.style.overflow = 'visible';
+      animationContainer.style.pointerEvents = 'none';
+      container.appendChild(animationContainer);
+
+      var theme = colorThemes[0];
+      (function addConfetto() {
+        var confetto = new Confetto(theme, container);
+        confetti.push(confetto);
+        animationContainer.appendChild(confetto.outer);
+        timer = setTimeout(addConfetto, spread * random());
+      })();
+
+      var prev = undefined;
+      requestAnimationFrame(function loop(timestamp) {
+        var delta = prev ? timestamp - prev : 0;
+        prev = timestamp;
+        var height = container.clientHeight;
+
+        for (var i = confetti.length - 1; i >= 0; --i) {
+          if (confetti[i].update(height, delta)) {
+            animationContainer.removeChild(confetti[i].outer);
+            confetti.splice(i, 1);
+          }
+        }
+
+        if (timer || confetti.length) return (frame = requestAnimationFrame(loop));
+
+        container.removeChild(animationContainer);
+        frame = undefined;
+      });
+    }
+  }
+
+  poof();
+}
