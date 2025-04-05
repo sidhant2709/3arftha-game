@@ -62,10 +62,16 @@ startGameButton.addEventListener("click", async function () {
     } else {
       console.error("Error from API:", result);
       alert(result.message || "Failed to start game.");
+      sessionStorage.removeItem("selectedCategoryId");
+      sessionStorage.removeItem("selectedSubcategoryIds");
+      window.location.href = "my_game.html";
     }
   } catch (error) {
     console.error("Error submitting form:", error);
     alert("An error occurred. Please try again.");
+    sessionStorage.removeItem("selectedCategoryId");
+    sessionStorage.removeItem("selectedSubcategoryIds");
+    window.location.href = "my_game.html";
   }
 });
 

@@ -209,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         alert("Subcategory added successfully!");
         addSubCategoriesform.reset();
+        document.getElementById("file-name-sub-category").textContent = "";
         fetchCategories();
       } else {
         const errorData = await response.json();
@@ -275,6 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         alert("Category added successfully!");
         addCategoriesForm.reset();
+        document.getElementById("file-name-category").textContent = "";
         fetchCategories();
       } else {
         const errorData = await response.json();
