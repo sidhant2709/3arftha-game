@@ -125,6 +125,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       ".lbm_allteam_wrapper ul:last-of-type"
     );
 
+    const noOne = document.querySelector(".lbm_allteam_thumb a");
+
     leftList.innerHTML = "";
     rightList.innerHTML = "";
 
@@ -158,6 +160,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
       });
     });
+
+    if (noOne) {
+      noOne.addEventListener("click", async (event) => {
+        event.preventDefault();
+        const userId = sessionStorage.getItem("userId");
+
+        try {
+          await startNextQuestion(userId, subCategoryId, teams);
+        } catch (error) {
+          alert(error.message);
+        }
+      });
+    }
   } catch (error) {
     alert(error.message);
   }
