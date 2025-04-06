@@ -59,7 +59,7 @@
                             <li><a href="my_game.html"><img src="images/vector/vector38.png" alt=""> Back to the
                                     Board</a></li>
                             <li class="li_vr"></li>
-                            <li><a href="new_game _7.html"><img src="images/vector/vector39.png" alt=""> Game over</a>
+                            <li><a href="new_game_who_answered.html"><img src="images/vector/vector39.png" alt=""> Game over</a>
                             </li>
                         </ul>
                     </div>
@@ -132,7 +132,7 @@
                         </div>
                         <div class="leaderboard_supportive">
                             <h4>Supportive <span>1</span></h4>
-                            <ul>
+                            <ul id="supportiveList">
                                 <li><a href="#"><img src="images/vector/vector42.png" alt=""></a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#"><img src="images/vector/vector43.png" alt=""></a></li>
@@ -145,19 +145,18 @@
                     </div>
                 </div>
                 <div class="custom_col_5">
-                    <div class="leaderboard_middle newgame5 newgame6">
-                        <div class="leaderboard_middle_content newgame6 newgame5">
-                            <div class="answer-container">
-                                <h2 id="answerText">Toyota bZ4X</h2>
+                    <div class="leaderboard_middle newgame5">
+                        <div class="leaderboard_middle_content newgame5">
+                            <div class="question-container">
+                                <h2 id="questionText">What is the fully electric <br> car made by Toyota</h2>
                             </div>
                             <div class="image-container">
-                                <img class="thumb4" src="" alt="Answer Image">
+                                <img class="logo3" src="" alt="Question Image">
                             </div>
-                            <p></p>
                             <div class="lbmc_footer position-relative">
-                                <a href="#" class="back_btn">Back</a>
+                                <img class="overlay" src="images/vector/vector47.png" alt="">
                                 <img class="vector46" src="images/vector/vector46.png" alt="">
-                                <a href="new_game _7.html" class="ans_btn">Who Answered</a>
+                                <a href="new_game_answer.html" class="ans_btn" id="answerButton">The Answer</a>
                             </div>
                         </div>
                     </div>
@@ -168,42 +167,45 @@
                             <div class="rounds">
                                 <div class="round_btn">
                                     <h6>Round</h6>
-                                    <h5 id="round">13</h5>
+                                    <h5 id="round">10</h5>
                                     <!-- <small>200</small> -->
                                 </div>
                                 <div class="round_btn">
-                                    <h6>Question no.</h6>
+                                    <h6>Question no. </h6>
                                     <h5 id="question_no">20</h5>
                                 </div>
                             </div>
-                            <!-- <div class="leaderboard_timer_main position-relative">
-                                    <img class="lb_timer_layer" src="images/vector/vector48.png" alt="">
-                                    <div class="leaderboard_timer_wrapper">
-                                        <img class="logo" src="images/vector/vector49.png" alt="">
-                                        <ul class="leaderboard_timer_content">
-                                            <li class="minute">00</li>
-                                            <li class="dots">:</li>
-                                            <li class="second">01</li>
-                                        </ul>
-                                        <div class="leaderboard_timer_indicators">
-                                            <button class="reset" type="button"><img src="images/vector/vector50.png" alt=""></button>
-                                            <button class="play_pause"><i class="fa-solid fa-pause"></i></button>
-                                        </div>
-                                    </div>
-                                </div> -->
                             <div class="lbrc_points_info_wrapper">
                                 <div class="lbrc_points_btn">
                                     <button><span>Points</span> <span class="round_points">200</span></button>
                                 </div>
-                                <div class="leaderboard_timer_para">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                                        <br>
+                                <!-- <div class="leaderboard_timer_para">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br>
                                         Lorem Ipsum has been the industry's
-                                        Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem
-                                        Ipsum has been theindustry's
-                                    </p>
+                                        Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been theindustry's</p>
+                                    </div> -->
+                            </div>
+                            <div class="leaderboard_timer_main position-relative">
+                                <img class="lb_timer_layer" src="images/vector/vector48.png" alt="">
+                                <div class="leaderboard_timer_wrapper">
+                                    <img class="logo" src="images/vector/vector49.png" alt="">
+                                    <ul class="leaderboard_timer_content">
+                                        <li class="minute">00</li>
+                                        <li class="dots">:</li>
+                                        <li class="second">01</li>
+                                    </ul>
+                                    <div class="leaderboard_timer_indicators">
+                                        <button class="reset" type="button"><img src="images/vector/vector50.png"
+                                                alt=""></button>
+                                        <button class="play_pause"><i class="fa-solid fa-pause"></i></button>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- <div class="leaderboard_timer_para">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br>
+                                    Lorem Ipsum has been the industry's
+                                    Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been theindustry's</p>
+                                </div> -->
                         </div>
                     </div>
                 </div>
@@ -211,20 +213,16 @@
         </div>
     </section>
     <!-- leaderboard-area end -->
-
-
-
     <!-- Main jQuery -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
 
     <!-- Bootstrap.bundle Script -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom jQuery -->
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
 
-
-    <script src="js/new_game_6.js"></script>
+    <script src="js/new_game_question.js"></script>
 
     <!-- Scroll-Top button -->
     <a href="#" class="scrolltotop" style="display: none;">

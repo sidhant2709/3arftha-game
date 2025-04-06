@@ -58,7 +58,7 @@ startGameButton.addEventListener("click", async function () {
       sessionStorage.setItem("currentQuestionIndex", result.currentQuestionIndex);
       sessionStorage.setItem("parentCategory", result.parentCategory);
       sessionStorage.setItem("assignedTeam", JSON.stringify(result.assignedTeam));
-      window.location.href = "new_game%20_5.html";
+      window.location.href = "new_game_question.html";
     } else {
       console.error("Error from API:", result);
       alert(result.message || "Failed to start game.");

@@ -100,6 +100,6 @@ function displaySubcategories(subcategories) {
     }
 
     sessionStorage.setItem("selectedSubcategoryIds", JSON.stringify(selectedSubcategoryIds));
-    window.location.href = "new_game _3.html";
+    window.location.href = "new_game_teams.html";
   });
 }

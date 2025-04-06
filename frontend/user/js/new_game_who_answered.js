@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
 
     if (startResult.gameId) {
-      window.location.href = "new_game%20_5.html";
+      window.location.href = "new_game_question.html";
     } else {
       [
         "gameId",
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       ].forEach((key) => {
         sessionStorage.removeItem(key);
       });
-      window.location.href = "new_game%20_8.html";
+      window.location.href = "new_game_leaderboard.html";
     }
   };
 

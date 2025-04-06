@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Store the gameId and endpoint in sessionStorage (optional)
         sessionStorage.setItem("gameId", gameId);
         // Navigate to new_game_5.html with gameId as a query parameter
-        window.location.href = `new_game _5.html?gameId=${gameId}`;
+        window.location.href = `new_game_question.html?gameId=${gameId}`;
       });
     });
   });
