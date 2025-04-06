@@ -26,10 +26,22 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const renderTable = (questions) => {
+    questions.sort((a, b) => {
+      const parentNameA = a.category.parentCategory.name.toLowerCase();
+      const parentNameB = b.category.parentCategory.name.toLowerCase();
+
+      if (parentNameA === parentNameB) {
+        // If parentCategory names are the same, sort by category name
+        const categoryNameA = a.category.name.toLowerCase();
+        const categoryNameB = b.category.name.toLowerCase();
+        return categoryNameA.localeCompare(categoryNameB);
+      }
+
+      return parentNameA.localeCompare(parentNameB);
+    });
     tableBody.innerHTML = ""; // Clear existing rows
     questions.forEach((question) => {
       const row = document.createElement("tr");
-
       row.innerHTML = `
         <td>${question._id}</td>
         <td>${question.content}</td>
